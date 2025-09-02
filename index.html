@@ -4,33 +4,56 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio || Home</title>
-  <!-- favicon link  -->
-   <link rel="shortcut icon" href="images/WhatsApp Image 2025-09-02 at 13.41.22_6c4cd5ce.jpg" type="image/x-icon">
-  <!-- css link  -->
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="images/WhatsApp Image 2025-09-02 at 13.41.22_6c4cd5ce.jpg" type="image/x-icon">
+
+  <!-- css -->
   <link rel="stylesheet" href="style.css">
+
   <!-- remix-icon -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css">
+
+  <!-- AOS (Animate on Scroll) -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <style>
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* General transition for hover effects */
+    * {
+      transition: all 0.7s ease;
+    }
+
+    nav a:hover,
+    .work-card:hover,
+    .skill-card:hover,
+    .footer-icons a:hover {
+      transform: translateY(-5px);
+      opacity: 0.9;
+    }
+  </style>
 </head>
 <body>
 <header id="home">
-<nav>
-  <!-- Navigation Links -->
-  <div class="nav-links">
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#works">Works</a>
-  </div>
+  <nav>
+    <!-- Navigation Links -->
+    <div class="nav-links" data-aos="fade-down" data-aos-delay="700">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#works">Works</a>
+    </div>
 
-  <!-- Hamburger -->
-<div class="hamburger">
-  <i class="ri-menu-line"></i>
-</div>
+    <!-- Hamburger -->
+    <div class="hamburger">
+      <i class="ri-menu-line"></i>
+    </div>
+  </nav>
 
-</nav>
-
-
-  <section class="hero">
+  <section class="hero" data-aos="fade-up" data-aos-delay="700">
     <p>Hi I'm</p>
     <h3>Iyiade</h3>
     <h1>Habeeb</h1>
@@ -43,129 +66,139 @@
   </section>
 </header>
 
+<section class="hero_2" id="about" data-aos="fade-right" data-aos-delay="700">
+  <div class="hero_2-text">
+    <h1>About</h1>
+    <p>
+      I’m a passionate web developer and designer who loves building modern, responsive, 
+      and user-friendly websites. With a strong focus on clean code and creative design, 
+      I enjoy turning ideas into interactive digital experiences that not only look great 
+      but also perform smoothly across all devices.
+    </p>
 
-  <section class="hero_2" id="about">
-    <div class="hero_2-text">
-      <h1>About</h1>
-      <p>
-        I’m a passionate web developer and designer who loves building modern, responsive, 
-        and user-friendly websites. With a strong focus on clean code and creative design, 
-        I enjoy turning ideas into interactive digital experiences that not only look great 
-        but also perform smoothly across all devices.
-      </p>
+    <p class="address">16, Arikewuyo Street <br><span> ____</span>Lagos, Alagbado<span> ____</span></p>
+  </div>
+</section>
 
-       <p class="address">16, Arikewuyo Street <br><span> ____</span>Lagos, Alagbado<span> ____</span></p>
-    </div>
-  </section>
+<section class="skills" id="skills">
+  <div class="skills-overlay"></div>
+  <div class="skills-content">
+    <h1 data-aos="zoom-in" data-aos-delay="700">My Skills</h1>
+    <div class="skills-grid">
+      <!-- HTML -->
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="700">
+        <h2>HTML</h2>
+        <p>
+          Strong understanding of HTML5 for creating semantic, accessible, 
+          and well-structured web pages. Skilled in layouts, forms, and multimedia integration.
+        </p>
+      </div>
 
-  <section class="skills" id="skills">
-    <div class="skills-overlay"></div>
-    <div class="skills-content">
-      <h1>My Skills</h1>
-      <div class="skills-grid">
-        
-        <!-- HTML -->
-        <div class="skill-card">
-          <h2>HTML</h2>
-          <p>
-            Strong understanding of HTML5 for creating semantic, accessible, 
-            and well-structured web pages. Skilled in layouts, forms, and multimedia integration.
-          </p>
-        </div>
+      <!-- CSS -->
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="900">
+        <h2>CSS</h2>
+        <p>
+          Proficient in modern CSS3 including Flexbox, Grid, animations, 
+          and responsive design to craft visually appealing interfaces.
+        </p>
+      </div>
 
-        <!-- CSS -->
-        <div class="skill-card">
-          <h2>CSS</h2>
-          <p>
-            Proficient in modern CSS3 including Flexbox, Grid, animations, 
-            and responsive design to craft visually appealing interfaces.
-          </p>
-        </div>
+      <!-- JavaScript -->
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="1100">
+        <h2>JavaScript</h2>
+        <p>
+          Experienced in building dynamic, interactive features with vanilla JavaScript, 
+          DOM manipulation, and ES6+ concepts for modern web development.
+        </p>
+      </div>
 
-        <!-- JavaScript -->
-        <div class="skill-card">
-          <h2>JavaScript</h2>
-          <p>
-            Experienced in building dynamic, interactive features with vanilla JavaScript, 
-            DOM manipulation, and ES6+ concepts for modern web development.
-          </p>
-        </div>
-
-        <!-- Tailwind CSS -->
-        <div class="skill-card">
-          <h2>Tailwind CSS</h2>
-          <p>
-            Skilled in using Tailwind to build fast, responsive, and modern UI designs 
-            with utility-first classes and custom configurations.
-          </p>
-        </div>
-
+      <!-- Tailwind CSS -->
+      <div class="skill-card" data-aos="fade-up" data-aos-delay="1300">
+        <h2>Tailwind CSS</h2>
+        <p>
+          Skilled in using Tailwind to build fast, responsive, and modern UI designs 
+          with utility-first classes and custom configurations.
+        </p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="works" id="works">
-    <div class="works-overlay"></div>
-    <div class="works-content">
-      <h1>Recent Works</h1>
+<section class="works" id="works">
+  <div class="works-overlay"></div>
+  <div class="works-content">
+    <h1 data-aos="zoom-in" data-aos-delay="700">Recent Works</h1>
 
-      <div class="works-grid">
-        <!-- Project 1: Nike Landing Page -->
-        <div class="work-card">
-          <img src="images/image-2.png" alt="Nike Landing Page">
-          <div class="work-info">
-            <h2>Nike Landing Page</h2>
-            <p>
-              A modern Nike-inspired landing page with sleek design, responsive layout, 
-              and stylish animations built using HTML, CSS, and JavaScript.
-            </p>
-            <a href="sneakerscompany1.netlify.app" class="work-btn">View Project</a>
-          </div>
+    <div class="works-grid">
+      <!-- Project 1: Game Website -->
+      <div class="work-card" data-aos="fade-left" data-aos-delay="700">
+        <img src="images/image-4.png" alt="Game Website">
+        <div class="work-info">
+          <h2>Game Website</h2>
+          <p>
+            An interactive gaming website featuring responsive layouts, engaging UI elements, 
+            and smooth animations — built with HTML, CSS, and JavaScript to provide an 
+            immersive experience for gamers.
+          </p>
+          <a href="https://free-to-game1.netlify.app/" target="_blank" class="work-btn">View Project</a>
         </div>
+      </div>
 
-        <!-- Project 2: Dictionary Website -->
-        <div class="work-card">
-          <img src="images/image.png" alt="Dictionary Website">
-          <div class="work-info">
-            <h2>Dictionary Website</h2>
-            <p>
-              An interactive dictionary web app powered by API integration, 
-              allowing users to search words and get real-time definitions and examples.
-            </p>
-            <a href="https://defina-dictionary.netlify.app/" class="work-btn">View Project</a>
-          </div>
+      <!-- Project 2: Dictionary Website -->
+      <div class="work-card" data-aos="fade-left" data-aos-delay="900">
+        <img src="images/image.png" alt="Dictionary Website">
+        <div class="work-info">
+          <h2>Dictionary Website</h2>
+          <p>
+            An interactive dictionary web app powered by API integration, 
+            allowing users to search words and get real-time definitions and examples.
+          </p>
+          <a href="https://defina-dictionary.netlify.app/" class="work-btn">View Project</a>
         </div>
+      </div>
 
-        <!-- Project 3: Perfume Tailwind Project -->
-        <div class="work-card">
-          <img src="images/image-3.png" alt="Perfume Tailwind Project">
-          <div class="work-info">
-            <h2>Perfume Website</h2>
-            <p>
-              A fully responsive perfume e-commerce landing page built entirely with Tailwind CSS, 
-              featuring modern UI components and clean, minimalist styling.
-            </p>
-            <a href="https://perfume-b.netlify.app/" class="work-btn">View Project</a>
-          </div>
+      <!-- Project 3: Perfume Tailwind Project -->
+      <div class="work-card" data-aos="fade-left" data-aos-delay="1100">
+        <img src="images/image-3.png" alt="Perfume Tailwind Project">
+        <div class="work-info">
+          <h2>Perfume Website</h2>
+          <p>
+            A fully responsive perfume e-commerce landing page built entirely with Tailwind CSS, 
+            featuring modern UI components and clean, minimalist styling.
+          </p>
+          <a href="https://perfume-b.netlify.app/" class="work-btn">View Project</a>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <footer class="footer" id="footer">
-    <div class="footer-overlay"></div>
-    <div class="footer-content">
-      <h2>Iyiade Habeeb</h2>
-      <p>Web Developer & Designer</p>
+<footer class="footer" id="footer" data-aos="fade-up" data-aos-delay="700">
+  <div class="footer-overlay"></div>
+  <div class="footer-content">
+    <h2>Iyiade Habeeb</h2>
+    <p>Web Developer & Designer</p>
 
     <div class="footer-icons">
       <a href="https://wa.me/2347067459781" target="_blank"><i class="ri-whatsapp-line"></i></a>
       <a href="https://github.com/Habeeb1213" target="_blank"><i class="ri-github-fill"></i></a>
     </div>
 
-      <p class="copyright">© 2025 Iyiade Habeeb. All Rights Reserved.</p>
-    </div>
-  </footer>
+    <p class="copyright">© 2025 Iyiade Habeeb. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<!-- JS -->
 <script src="script.js"></script>
+
+<!-- AOS Script -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,  
+    once: true,      
+    delay: 700       
+  });
+</script>
 </body>
 </html>
